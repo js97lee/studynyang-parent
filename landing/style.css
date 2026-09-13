@@ -31,3 +31,13 @@ html{overflow-x:clip}
 .hardware-guide .color-options span{color:#8c8196}
 .hardware-guide .color-options i{border:1px solid #d9d5de}
 @media(max-width:760px){.hardware-guide{padding:40px 24px}}
+/* Keep full width while restoring the original brand palette. */
+.hardware-guide{background:#513795;color:#fff}
+.hardware-guide .eyebrow{color:#d4c3ef}
+.hardware-guide .section-intro p{color:#e1d8ed}
+.hardware-details p{color:#e0d6ed}
+.hardware-details .picto{color:#dbc9f8}
+.hardware-grid figcaption{color:#d0c2e3}
+.hardware-guide .color-options{border-top-color:#ffffff30;color:#fff}
+.hardware-guide .color-options span{color:#d2c1e7}
+.hardware-guide .color-options i{border:0}
