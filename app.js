@@ -43,3 +43,6 @@ $('#export').addEventListener('click',()=>{let rows=selectedSessions();if(state.
 $('#connectForm').addEventListener('submit',event=>{event.preventDefault();if($('#accessKey').value.trim().toUpperCase()!=='NYANG26'){$('#connectionError').textContent='체험 코드는 NYANG26이에요. 다시 입력해 주세요.';return;}state.connected=true;$('#connectDialog').close();render();toast('지우의 스페이스 연결을 체험했어요.');});
 $('#connectDialog').addEventListener('click',e=>{if(e.target===$('#connectDialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
 render();
+
+const entryPage = new URLSearchParams(location.search).get("page");
+if (["overview", "records", "goals", "connection"].includes(entryPage)) navigate(entryPage);
