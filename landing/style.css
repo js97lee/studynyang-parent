@@ -21,3 +21,13 @@ header a:focus-visible{outline:3px solid #fff;outline-offset:5px}
 .closing-content{text-shadow:0 2px 12px #0008}
 .closing-content .links{text-shadow:none}
 html{overflow-x:clip}
+/* Full-width, quiet product introduction. */
+.hardware-guide{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);border-radius:0;background:#f4f4f5;color:#30283e;padding:56px max(32px,calc((100vw - 1096px)/2));box-sizing:border-box}
+.hardware-guide .eyebrow{color:#857193}
+.hardware-guide .section-intro p,.hardware-details p{color:#756e7d}
+.hardware-details .picto{color:#7855b2}
+.hardware-grid figcaption{color:#8e8596}
+.hardware-guide .color-options{border-top-color:#dedce2;color:#625b6b}
+.hardware-guide .color-options span{color:#8c8196}
+.hardware-guide .color-options i{border:1px solid #d9d5de}
+@media(max-width:760px){.hardware-guide{padding:40px 24px}}
